@@ -8,5 +8,5 @@ export interface IIngredient {
   getStock       : () => number;
   ready          : () => Promise<boolean>;
   refill         : () => void;
-  setStock       : () => void;
+  setStock       : (stock: number) => void;
 }

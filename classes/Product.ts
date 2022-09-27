@@ -1,23 +1,23 @@
-import { IIngredient } from "../interfaces/ingredient";
+import { IIngredient } from '../interfaces/Ingredient';
 
 export class Product {
 
   private ingredients : IIngredient[];
-  private measures    : Map<string,number>;
+  // private measures    : Map<string,number>;
   private name        : string;
   private price       : number;
 
   constructor(
     ingredients : IIngredient[],
-    measures    : Map<string,number>,
+    // measures    : Map<string,number>,
     name        : string,
     price       : number,
   ) {
     this.ingredients = ingredients;
-    this.measures    = measures;
+    // this.measures    = measures;
     this.name        = name;
     this.price       = price;
-  }
+  };
 
   getName() {
     return this.name;
