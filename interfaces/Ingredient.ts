@@ -10,3 +10,14 @@ export interface IIngredient {
   refill         : () => void;
   setStock       : (stock: number) => void;
 }
+
+export interface IIngredientCanBoil {
+  currentTemp : number;
+  maxTemp    : number;
+  minTemp    : number;
+  boil       : () => Promise<boolean>;
+}
+
+export interface IIngredientCanGrind {
+  grind : () => Promise<boolean>;
+}
